@@ -1,0 +1,11 @@
+设置window的标题
+  [self setTitle:@"ji suan qi"];
+
+
+自适应按键尺寸
+  [btns[15] sizeToFit];
+  [btns[15] setTitle:@"="];  [btns[15] setState:NO];  [btns[15] setAction:@selector(digit:)];设置按键背景颜色  [btns[15] setImage: [NSImage imageNamed: @"finger.png”]];
+//设置按键大小
+  NSFont *font;
+      font = [NSFont systemFontOfSize: 30];
+  [btns[15] setFont: font]; 输入框  [display setEditable: NO];  [display setBezeled: NO];  [display setDrawsBackground: NO]; [display setAlignment: NSRightTextAlignment];  [display setBackgroundColor: [NSColor controlBackgroundColor]];  [display setAutoresizingMask: NSViewWidthSizable];  label = AUTORELEASE ([NSTextField new]);  [label setSelectable: NO];  [label setBezeled: NO];  [label setDrawsBackground: NO];  [label setStringValue: fieldString[0]];  [label sizeToFit];  [label setAutoresizingMask: NSViewHeightSizable];  [hbox addView: label        enablingXResizing: NO];
