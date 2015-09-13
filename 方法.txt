@@ -1,11 +1,42 @@
-ÉèÖÃwindowµÄ±êÌâ
+9_13 commit
+
+
+è®¾ç½®windowçš„æ ‡é¢˜
   [self setTitle:@"ji suan qi"];
 
 
-×ÔÊÊÓ¦°´¼ü³ß´ç
+è‡ªé€‚åº”æŒ‰é”®å°ºå¯¸
   [btns[15] sizeToFit];
-  [btns[15] setTitle:@"="];  [btns[15] setState:NO];  [btns[15] setAction:@selector(digit:)];ÉèÖÃ°´¼ü±³¾°ÑÕÉ«  [btns[15] setImage: [NSImage imageNamed: @"finger.png¡±]];
-//ÉèÖÃ°´¼ü´óĞ¡
+  [btns[15] setTitle:@"="];
+  [btns[15] setState:NO];
+  [btns[15] setAction:@selector(digit:)];
+è®¾ç½®æŒ‰é”®èƒŒæ™¯é¢œè‰²
+  [btns[15] setImage: [NSImage imageNamed: @"finger.pngâ€]];
+
+//è®¾ç½®æŒ‰é”®å¤§å°
   NSFont *font;
       font = [NSFont systemFontOfSize: 30];
-  [btns[15] setFont: font]; ÊäÈë¿ò  [display setEditable: NO];  [display setBezeled: NO];  [display setDrawsBackground: NO]; [display setAlignment: NSRightTextAlignment];  [display setBackgroundColor: [NSColor controlBackgroundColor]];  [display setAutoresizingMask: NSViewWidthSizable];  label = AUTORELEASE ([NSTextField new]);  [label setSelectable: NO];  [label setBezeled: NO];  [label setDrawsBackground: NO];  [label setStringValue: fieldString[0]];  [label sizeToFit];  [label setAutoresizingMask: NSViewHeightSizable];  [hbox addView: label        enablingXResizing: NO];
+  [btns[15] setFont: font]; 
+
+
+
+è¾“å…¥æ¡†
+  [display setEditable: NO];
+  [display setBezeled: NO];
+  [display setDrawsBackground: NO];
+ [display setAlignment: NSRightTextAlignment];
+
+  [display setBackgroundColor: [NSColor controlBackgroundColor]];
+  [display setAutoresizingMask: NSViewWidthSizable];
+
+
+
+  label = AUTORELEASE ([NSTextField new]);
+  [label setSelectable: NO];
+  [label setBezeled: NO];
+  [label setDrawsBackground: NO];
+  [label setStringValue: fieldString[0]];
+  [label sizeToFit];
+  [label setAutoresizingMask: NSViewHeightSizable];
+  [hbox addView: label
+        enablingXResizing: NO];
