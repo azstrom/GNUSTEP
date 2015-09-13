@@ -40,3 +40,6 @@
   [label setAutoresizingMask: NSViewHeightSizable];
   [hbox addView: label
         enablingXResizing: NO];
+
+
+//change
